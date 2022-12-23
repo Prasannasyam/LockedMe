@@ -58,7 +58,7 @@ public class FileOperations {
 		System.out.println();
 		return fileListNames;
 	}
-
+       //Create file
 	public static void createFile(String fileToAdd, Scanner sc) {
 		FileOperations.createMainFolder("main");
 		Path pathToFile = Paths.get("./main/" + fileToAdd);
@@ -102,7 +102,7 @@ public class FileOperations {
 
 		return fileListNames;
 	}
-
+      //Search file
 	public static void searchFile(String path, String fileName, List<String> fileListNames) {
 		File dir = new File(path);
 		File[] files = dir.listFiles();
@@ -121,7 +121,7 @@ public class FileOperations {
 			}
 		}
 	}
-
+      //Delete file
 	public static void deleteFile(String path) {
 
 		File currFile = new File(path);
